@@ -1,0 +1,6 @@
+@media screen and (max-width: 991px) {
+    .navbar-nav li.nav-item{
+        margin: 15px 0;
+        text-align: center;
+    }
+}
