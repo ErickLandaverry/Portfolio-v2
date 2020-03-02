@@ -3,4 +3,8 @@
         margin: 15px 0;
         text-align: center;
     }
+
+    .navbar-nav-bg {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 }

@@ -16,6 +16,7 @@ body {
     font-size: 15px;
     color: #777;
     line-height: 1.5;
+    height: 3000px;
 }
 
 p {
@@ -63,10 +64,17 @@ a, a:hover {
     left: 0;
     z-index: 2;
 }
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 /** Header Styles **/
 
 header {
-    background-color: #333;
+    /*background-color: #333;*/
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 }
 
 a.navbar-brand {
@@ -121,7 +129,7 @@ li.nav-item:last-child {
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 button:focus {
