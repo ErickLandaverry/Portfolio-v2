@@ -188,15 +188,67 @@ button:focus {
     font-weight: bold;
     display: inline-block;
     margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
 }
 
 .cta-portfolio {
-    background-color: #e84118;
+
     border: 1px solid #e84118;
+}
+
+.cta-portfolio::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e84118;
+    content: '';
+    z-index: -1;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.cta-portfolio:hover {
+    border-color: #fff;
+}
+
+.cta-portfolio:hover::before {
+    left: 100%;
 }
 
 .cta-contact {
     border: 1px solid #fff;
+}
+
+.cta-contact::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    content: '';
+    background-color: #E84118;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.cta-contact:hover:after {
+    left: 0;
+}
+
+.cta-contact:hover {
+    border-color: #E84118;
 }
 
 canvas {
