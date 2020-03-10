@@ -30,6 +30,11 @@ doc.ready(function(){
         else {
             $('.navbar-nav').addClass('navbar-nav-bg');
         }
-    })
+    });
+
+    $('.progress-content .skill-progress').each(function(){
+        var value = $(this).attr('data-progress');
+        $(this).css('width', '' + value +'%');
+    });
 });
 
