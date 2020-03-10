@@ -5,7 +5,7 @@ doc.ready(function(){
 
     var typed = new Typed('.mytext', {
         strings: ['Web Developer', 'Web Designer'],
-        smartBackspace: true, // Default value
+        smartBackspace: true, 
         loop: true,
         backDelay: 1500,
         typeSpeed: 10
