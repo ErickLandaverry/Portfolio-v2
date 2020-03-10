@@ -60,7 +60,15 @@ a, a:hover {
 .svg-bottom {
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: -1px;
+    left: 0;
+    z-index: 2;
+}
+
+.svg-top {
+    position: absolute;
+    width: 100%;
+    top: -1px;
     left: 0;
     z-index: 2;
 }
@@ -332,7 +340,6 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 700px;
     position: relative;
     color: #ddd;
 }
