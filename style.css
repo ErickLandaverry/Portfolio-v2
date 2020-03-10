@@ -335,6 +335,21 @@ canvas {
 
 /** Experience Skilss **/
 
+.section-header {
+    width: 100%;
+    position: relative;
+}
+
+.section-header::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 3px;
+    background-color: #fff;
+}
+
 .exp-skills {
     background:url(img/about.jpg);
     background-repeat: no-repeat;
@@ -356,6 +371,21 @@ canvas {
 
 .exp-skills h3, .exp-skills h5 {
     color: #fff;
+}
+
+.exp-skills h3 {
+    position: relative;
+    display: inline-block;
+}
+
+.exp-skills h3::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: -5px;
+    background-color: #e84118;
 }
 
 .exp-skills h5 {
