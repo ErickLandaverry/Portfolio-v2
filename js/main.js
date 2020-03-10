@@ -33,8 +33,16 @@ doc.ready(function(){
     });
 
     $('.progress-content .skill-progress').each(function(){
-        var value = $(this).attr('data-progress');
-        $(this).css('width', '' + value +'%');
+        var waypoint = new Waypoint({
+            element: this,
+            handler: function(direction) {
+                var value = $(this.element).attr('data-progress');
+                $(this.element).css('width', '' + value +'%');
+            },
+            offset: '75%'
+        });
     });
+
+
 });
 
