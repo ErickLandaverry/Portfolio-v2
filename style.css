@@ -16,7 +16,7 @@ body {
     font-size: 15px;
     color: #777;
     line-height: 1.5;
-    height: 3000px;
+
 }
 
 p {
@@ -417,3 +417,5 @@ canvas {
     width: 1%;
     border-radius: 20px;
 }
+
+/** Technical Skills Styles**/
