@@ -43,10 +43,15 @@ doc.ready(function(){
         });
     });
 
-    $('.portfolio-container').isotope({
+    var $grid = $('.portfolio-container').isotope({
         // options
-        itemSelector: '.portfolio-item'
-      });
+        itemSelector: '.portfolio-item',
+    });
+
+    $('.filter li').on( 'click', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
 
 
 });
