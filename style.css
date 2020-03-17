@@ -657,3 +657,13 @@ textarea {
 .contact i.fa {
     margin-right: 15px;
 }
+
+/**Footer Styles**/
+
+footer {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    color: #ddd;
+    background-color: #e84118;
+}
