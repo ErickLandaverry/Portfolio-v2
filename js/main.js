@@ -43,6 +43,11 @@ doc.ready(function(){
         });
     });
 
+    $('.portfolio-container').isotope({
+        // options
+        itemSelector: '.portfolio-item'
+      });
+
 
 });
 

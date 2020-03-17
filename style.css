@@ -335,12 +335,12 @@ canvas {
 
 /** Experience Skilss **/
 
-.section-header {
+.exp-skills .section-header {
     width: 100%;
     position: relative;
 }
 
-.section-header::before {
+.exp-skills .section-header::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -351,7 +351,7 @@ canvas {
 }
 
 .exp-skills {
-    background:url(img/about.jpg);
+    background:url(img/Skills/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -462,12 +462,24 @@ canvas {
 
 /** Portfolio Styles**/
 
+.portfolio {
+    background-color: #333;
+    color: #fff;
+}
+
+.portfolio-item {
+    margin: 5px 0;
+}
 .item-content {
     width: 100%;
     position: relative;
+    border: 3px solid #fff;
+    overflow: hidden;
 }
 .item-content img {
     width: 100%;
+    transition: all 0.5s ease;
+    transform: scale(1)rotate(0deg);
 }
 
 .portfolio-item.col-md-3 img {
@@ -512,6 +524,7 @@ canvas {
 .portfolio-item .info {
     z-index: 2;
     position: relative;
+    font-weight: bold;
 }
 
 .portfolio-item .info .description {
@@ -520,6 +533,7 @@ canvas {
     top:-20px;
     position: relative;
     transition: all 0.5s ease;
+    font-size: 16px;
 }
 
 .portfolio-item .info .item-icon {
@@ -545,5 +559,9 @@ canvas {
 
 .portfolio-item:hover .info .description {
     opacity: 1;
-    top: -5px;
+    top: -95px;
+}
+
+.portfolio-item:hover .item-content img {
+    transform: scale(1.2) rotate(10deg);
 }
