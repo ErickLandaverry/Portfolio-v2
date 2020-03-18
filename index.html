@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700|Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <script type="text/javascript" src="js/respond.js"></script>
@@ -19,12 +20,12 @@
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg full-width">
-                    <a class="navbar-brand" href="#">Erick Landaverry</a>
+                    <a class="navbar-brand animation" href="#" data-animation="fadeInLeft">Erick Landaverry</a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="ToggleNavigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="menu">
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ml-auto animation" data-animation="fadeInRight">
                             <li class="nav-item active"><a href="#main" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                             <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
@@ -64,9 +65,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="img/About/erickLandaverry.jpg" class="img-fluid" alt="about image">
+                    <img src="img/About/erickLandaverry.jpg" class="img-fluid animation" alt="about image" data-animation="zoomIn">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 animation" data-animation="fadeInRight">
                     <h3>About Me</h3>
                     <h5>Web Developer & Web Designer</h5>
                     <p>Certified and creative web developer and designer leveraging experience in building and optimizing the performance    of user-centric, high-impact websites. Demonstrate a comprehensive knowledge of backend and front-end web development with innovative use of technology to drive traffic and user engagement. Employ technical expertise, analytical and problem-solving skills to create dynamic, high-speed websites, and platforms fueling competitive advantage and revenue growth. Possesses a verifiable track record of building a positive rapport with clients, completing the project efficiently and satisfying customers</p>
@@ -89,7 +90,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-4 education">
+                <div class="col-md-4 education animation" data-animation="fadeInLeft">
                     <div class="section-header">
                         <h3>Education</h3>
                     </div>
@@ -105,7 +106,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-4 experience">
+                <div class="col-md-4 experience animation" data-animation="fadeInUp">
                     <div class="section-header">
                         <h3>Experience</h3>
                     </div>
@@ -133,7 +134,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-4 skills">
+                <div class="col-md-4 skills animation" data-animation="fadeInRight">
                     <div class="section-header">
                         <h3>Skills</h3>
                     </div>
@@ -189,7 +190,7 @@
                 </div>
             </div>
             <div class="services-content">
-                <div class="row">
+                <div class="row animation" data-animation="fadeInLeft">
                     <div class="col-lg-4 text-center">
                         <div class="service-single">
                             <div class="icon-container d-flex justify-content-center">
@@ -227,7 +228,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row animation" data-animation="fadeInRight">
                     <div class="col-lg-4 text-center">
                         <div class="service-single">
                             <div class="icon-container d-flex justify-content-center">
@@ -269,7 +270,7 @@
     </section>
 
     <!--Portfolio Section-->
-    <section class="section-padding portfolio" id="portfolio">
+    <section class="section-padding portfolio animation" id="portfolio" data-animation="fadeIn">
         <svg viewBox="0 0 1400 100" class="svg-top">
             <polygon points="0,100 200,0 1200,0 1400,100 1400,0 0,0 0,100" style="fill: white;"></polygon>
         </svg>
@@ -453,7 +454,7 @@
                 </div>
             </div>
 
-            <div class="contact-top text-center">
+            <div class="contact-top text-center animation" data-animation="fadeInLeft">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="contact-location"><i class="fa fa-location-arrow"></i>Address</div>
@@ -473,7 +474,7 @@
             </div>
 
             
-            <div class="contact-form">
+            <div class="contact-form animation" data-animation="zoomIn">
                 <div class="row">
                     <div class="col-md-6">
                         <input type="text" id="name" name="name" placeholder="Enter Name">

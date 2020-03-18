@@ -44,7 +44,20 @@ doc.ready(function(){
                 var value = $(this.element).attr('data-progress');
                 $(this.element).css('width', '' + value +'%');
             },
-            offset: '75%'
+            offset: '70%'
+        });
+    });
+
+    /**Scrolling Animation **/
+    $('.animation').each(function(){
+        var waypoint = new Waypoint({
+            element: this,
+            handler: function(direction) {
+                var cssvalue = $(this.element).attr('data-animation');
+                $(this.element).addClass("animated "+cssvalue)
+                $(this.element).css('opacity', '1');
+            },
+            offset: '70%'
         });
     });
 
