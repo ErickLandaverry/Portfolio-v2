@@ -2,13 +2,18 @@ var doc = jQuery(document);
 
 doc.ready(function(){
     "use strict";
-
+    $(window).scrollTop(0);
+    
     var typed = new Typed('.mytext', {
         strings: ['Web Developer', 'Web Designer'],
         smartBackspace: true, 
         loop: true,
         backDelay: 1500,
         typeSpeed: 10
+    });
+
+    $('.navbar-nav').onePageNav({
+        currentClass: 'active'
     });
 
     if($(window).scrollTop()<200) {
@@ -54,7 +59,5 @@ doc.ready(function(){
         $grid.isotope({ filter: filterValue });
         $(this).addClass('filter-active');
     });
-
-
 });
 

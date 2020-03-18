@@ -15,7 +15,7 @@
 </head>
 <body>
     <!--Header Nav-->
-    <header>
+    <header id="header">
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg full-width">
@@ -25,11 +25,12 @@
                     </button>
                     <div class="collapse navbar-collapse" id="menu">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                            <li class="nav-item active"><a href="#main" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -38,7 +39,7 @@
     </header>
 
     <!--Header Body-->
-    <section class="main d-flex justify-content-center">
+    <section class="main d-flex justify-content-center" id="main">
         <div id="myparticles"></div>
         <div class="main-content align-self-center">
             <div class="welcome">Welcome</div>
@@ -57,7 +58,7 @@
     </section>
 
     <!--About -->
-    <section class="section-padding about">
+    <section class="section-padding about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -78,7 +79,7 @@
     </section>
 
     <!--Eperience & Skills-->
-    <section class="section-padding exp-skills">
+    <section class="section-padding exp-skills" id="experience">
 
         <svg viewBox="0 0 1400 100" class="svg-top">
             <polygon points="0,100 200,0 1200,0 1400,100 1400,0 0,0 0,100" style="fill: white;"></polygon>
@@ -178,7 +179,7 @@
     </section>
 
     <!--Technical Skills-->
-    <section class="services section-padding">
+    <section class="services section-padding" id="skills">
         <div class="container">
             <div class="row">
                 <div class="section-header text-center full-width">
@@ -266,7 +267,7 @@
     </section>
 
     <!--Portfolio Section-->
-    <section class="section-padding portfolio">
+    <section class="section-padding portfolio" id="portfolio">
         <svg viewBox="0 0 1400 100" class="svg-top">
             <polygon points="0,100 200,0 1200,0 1400,100 1400,0 0,0 0,100" style="fill: white;"></polygon>
         </svg>
@@ -440,7 +441,7 @@
     </section>
 
     <!--Contact-->
-    <section class="section-padding contact"> 
+    <section class="section-padding contact" id="contact"> 
         <div class="container">
             <div class="section-header full-width text-center">
                 <div class="row">
@@ -505,6 +506,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="js/isotope.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
