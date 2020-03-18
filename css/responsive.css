@@ -15,6 +15,10 @@
     .services-content .row .col-lg-4:nth-child(1) {
         margin-top: 0;
     }
+
+    .main .type {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -25,4 +29,19 @@
     .education, .experience, .about .col-md-7, .skills {
         text-align: center;
     }
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 500px) {
+    .main .type {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
 }
