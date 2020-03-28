@@ -456,7 +456,10 @@ canvas {
     background-color: #eee;
 }
 
-.service-single:hover .fa {
+.service-single:hover .fab{
+    transform: scale(1.3) rotateY(180deg);
+}
+.service-single:hover .fas{
     transform: scale(1.3) rotateY(180deg);
 }
 
