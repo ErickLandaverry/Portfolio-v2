@@ -8,8 +8,8 @@ doc.ready(function(){
         strings: ['Web Developer', 'Web Designer'],
         smartBackspace: true, 
         loop: true,
-        backDelay: 1500,
-        typeSpeed: 10
+        backDelay: 1700,
+        typeSpeed: 30
     });
 
     $('.navbar-nav').onePageNav({
