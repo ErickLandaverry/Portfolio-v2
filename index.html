@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/Skilled Logos/Adobe.png" type="image/x-icon">
     <script type="text/javascript" src="js/respond.js"></script>
 
 </head>
@@ -553,22 +554,24 @@
 
             
             <div class="contact-form animation" data-animation="zoomIn">
-                <div class="row">
-                    <div class="col-md-6">
-                        <input type="text" id="name" name="name" placeholder="Enter Name">
+                <form action="contact.php" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="name" name="name" placeholder="Enter Name">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="email" id="email" name="email" placeholder="Enter Email">
+                        </div>
                     </div>
 
-                    <div class="col-md-6">
-                        <input type="email" id="email" name="email" placeholder="Enter Email">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Message"></textarea>
+                            <input type="submit" class="" id="submit" value="Submit">
+                        </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Message"></textarea>
-                        <input type="submit" class="" id="submit" value="Submit">
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
