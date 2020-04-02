@@ -552,7 +552,7 @@ canvas {
     top:-20px;
     position: relative;
     transition: all 0.5s ease;
-    font-size: 16px;
+    font-size: 11px;
 }
 
 .portfolio-item .info .item-icon {
@@ -578,7 +578,7 @@ canvas {
 
 .portfolio-item:hover .info .description {
     opacity: 1;
-    top: -95px;
+    top: -38px;
 }
 
 .portfolio-item:hover .item-content img {
